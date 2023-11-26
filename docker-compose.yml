@@ -1,0 +1,19 @@
+version: '0'
+
+services:
+
+  terrain-to-gpkg: 
+
+    image: terrain-to-gpkg:v1.0.3
+
+    build: .
+
+    container_name: terrain-to-gpkg-container
+
+    ports:
+      - 8000:8000
+
+    environment:
+      GPKG_LIST: '[{"id": "terrain-tiles", "path": "terrain-tiles.gpkg" }]'
+
+    restart: unless-stopped
