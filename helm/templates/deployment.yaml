@@ -60,7 +60,7 @@ spec:
             {{- if .Values.pvc }}
             - name: storage
               mountPath: /data
-              subPath: data
+              subPath: dem/gpkg-terrain
             {{- end }}
           env:
             - name: SERVER_PORT
