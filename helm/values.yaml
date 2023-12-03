@@ -22,7 +22,7 @@ caSecretName: ''
 caPath: /usr/local/share/ca-certificates
 caKey: ca.crt
 
-pvc: gpkg-terrain-pvc-int
+pvc: dem-pvc-int
 
 image:
   repository: gpkg-terrain
